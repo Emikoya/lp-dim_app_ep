@@ -1,0 +1,11 @@
+<button mat-raised-button (click)="goBack()">
+  <mat-icon>arrow_back</mat-icon>
+</button>
+<p>student-details works!</p>
+{{ spellID }}
+{{ spell$ | async | json }}
+
+<app-spell-card
+  [selectedSpell]="spell$ | async"
+  (received)="showReceivedValue($event)"
+></app-spell-card>

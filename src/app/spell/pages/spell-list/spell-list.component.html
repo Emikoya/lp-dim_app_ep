@@ -1,0 +1,12 @@
+{{ spells$ | async | json }}
+<div class="container">
+  <h2>Liste des sorts</h2>
+  <div class="flex-grow-1 p-1">
+    <table></table>
+  </div>
+  <div class="btn-holder">
+    <button mat-fab color="warn" (click)="openSpellForm()">
+      <mat-icon>add</mat-icon>
+    </button>
+  </div>
+</div>
